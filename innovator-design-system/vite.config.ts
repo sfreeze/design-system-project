@@ -2,9 +2,10 @@
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
-import path from "node:path";
+import path from "path";
 import { fileURLToPath } from "node:url";
 import { storybookTest } from "@storybook/addon-vitest/vitest-plugin";
 const dirname =
@@ -14,7 +15,7 @@ const dirname =
 
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), svgr()],
   test: {
     projects: [
       {
@@ -26,11 +27,6 @@ export default defineConfig({
             configDir: path.join(dirname, ".storybook"),
           }),
         ],
-        resolve: {
-          alias: {
-            "@": path.resolve(__dirname, "./src"),
-          },
-        },
         test: {
           name: "storybook",
           browser: {
@@ -47,5 +43,11 @@ export default defineConfig({
         },
       },
     ],
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      "@mango/shared": path.resolve(__dirname, "../../packages/shared/src"),
+    },
   },
 });
