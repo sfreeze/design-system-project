@@ -12,6 +12,7 @@ const BUTTON_VARIANTS = [
   "danger",
   "danger_outlined",
   "danger_ghost",
+  "link",
 ] as const;
 
 const BUTTON_SIZES = ["xs", "sm", "md", "lg", "xl"] as const;

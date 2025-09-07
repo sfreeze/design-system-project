@@ -27,7 +27,7 @@ const buttonVariants = cva(
         danger_ghost:
           "bg-transparent text-error-500 hover:bg-error-50 disabled:text-error-200",
         link:
-          "bg-transparent px-0 h-auto! underline",
+          "bg-transparent px-0 h-auto! text-primary-500 underline",
       },
       size: {
         // has-[>svg]:px-2
