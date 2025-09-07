@@ -92,32 +92,32 @@
   --color-margenta-50: #ffeaf7;
 
   /*** Typography ***/
-  --text-headline1: 40px;
-  --text-headline1--line-height: 54px;
-  --text-headline1--font-weight: 700;
-  --text-headline2: 32px;
-  --text-headline2--line-height: 48px;
-  --text-headline2--font-weight: 700;
-  --text-headline3: 28px;
-  --text-headline3--line-height: 42px;
-  --text-headline3--font-weight: 700;
-  --text-headline4: 24px;
-  --text-headline4--line-height: 36px;
-  --text-headline4--font-weight: 700;
+  --font-headline1: 40px;
+  --font-headline1--line-height: 54px;
+  --font-headline1--font-weight: 700;
+  --font-headline2: 32px;
+  --font-headline2--line-height: 48px;
+  --font-headline2--font-weight: 700;
+  --font-headline3: 28px;
+  --font-headline3--line-height: 42px;
+  --font-headline3--font-weight: 700;
+  --font-headline4: 24px;
+  --font-headline4--line-height: 36px;
+  --font-headline4--font-weight: 700;
 
-  --text-body1: 20px;
-  --text-body1--line-height: 34px;
-  --text-body2: 18px;
-  --text-body2--line-height: 32px;
-  --text-body3: 16px;
-  --text-body3--line-height: 28px;
-  --text-body4: 14px;
-  --text-body4--line-height: 24px;
+  --font-body1: 20px;
+  --font-body1--line-height: 34px;
+  --font-body2: 18px;
+  --font-body2--line-height: 32px;
+  --font-body3: 16px;
+  --font-body3--line-height: 28px;
+  --font-body4: 14px;
+  --font-body4--line-height: 24px;
 
-  --text-caption1: 12px;
-  --text-caption1--line-height: 16px;
-  --text-caption2: 10px;
-  --text-caption2--line-height: 14px;
+  --font-caption1: 12px;
+  --font-caption1--line-height: 16px;
+  --font-caption2: 10px;
+  --font-caption2--line-height: 14px;
 
   /* shadow */
   --shadow-xs: 0 1px 4px 0 rgba(0, 0, 0, 0.06), 0 4px 8px 0 rgba(0, 0, 0, 0.06);
@@ -221,6 +221,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
 }
 
 .dark {
@@ -257,14 +258,14 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px); /* 4px */
