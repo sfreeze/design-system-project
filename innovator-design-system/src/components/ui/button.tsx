@@ -29,11 +29,11 @@ const buttonVariants = cva(
       },
       size: {
         // has-[>svg]:px-2
-        xs: "h-6 rounded-sm gap-1 px-3 font-caption1 font-regular [&_svg:not([class*='size-'])]:size-4",
-        sm: "h-8 rounded-sm gap-1 px-3 font-body4 font-medium [&_svg:not([class*='size-'])]:size-4",
-        md: "h-9 px-4 font-body4 font-bold [&_svg:not([class*='size-'])]:size-5",
-        lg: "h-12 px-4 font-body3 font-bold [&_svg:not([class*='size-'])]:size-6",
-        xl: "h-14 px-6 font-body3 font-bold [&_svg:not([class*='size-'])]:size-6",
+        xs: "h-6 rounded-sm gap-1 px-3 text-xs font-regular [&_svg:not([class*='size-'])]:size-4",
+        sm: "h-8 rounded-sm gap-1 px-3 text-sm font-medium [&_svg:not([class*='size-'])]:size-4",
+        md: "h-9 px-4 text-sm font-bold [&_svg:not([class*='size-'])]:size-5",
+        lg: "h-12 px-4 text-base font-bold [&_svg:not([class*='size-'])]:size-6",
+        xl: "h-14 px-6 text-base font-bold [&_svg:not([class*='size-'])]:size-6",
         icon: "size-9",
       },
     },
